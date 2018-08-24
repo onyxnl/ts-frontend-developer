@@ -5,5 +5,10 @@
 
 var sum_to_n = function(n) {
     // your code here
-    //here
+    var k =0;
+    for(var i=0; i<=n;i++){
+    	  k = k+ i
+     }
+   
+    return k;
 };

@@ -5,24 +5,27 @@
   <title>Fancy Form</title>
 
   <!-- You may add more stuff here -->
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
   <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
 
   <!-- You may wrap the form in your own elements if necessary. -->
-  <form onsubmit="return !1">
+ 
+  <form onsubmit="return formValidation()">
+    <p id="successalert">Form Submit Successfully !!!</p>
     <label for="input-address">Bitcoin Address</label>
     <input id="input-address" placeholder="16q4PinynazaMYfv24juNLkbjkDQxJo2dc" />
-
+    <p id="p1" class="msgalert"></p>
     <label for="input-amount">Amount to send</label>
     <input id="input-amount" placeholder="0.0000" />
-
+    <p id="p2" class="msgalert"></p>
     <label for="input-otp">OTP Authentication</label>
     <input type="number" id="input-otp" placeholder="SMS OTP" />
-
-    <button>SEND BTC</button>
+    <p id="p3" class="msgalert"></p>
+    <button id="sendbtn" type="submit">SEND BTC</button>
+   
   </form>
 </body>
 
